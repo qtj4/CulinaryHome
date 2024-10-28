@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <h1 class="logo">Culinary Home</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe.html">Recipes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="user_dashboard.html">User Dashboard</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="log-in">Log in</button>
+            <button class="sign-up">Sign up</button>
+        </div>
+    </div>
+</header>
+<main>
+    <section>
+        <h2>User Dashboard</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Recipe Name</th>
+                <th>Date Submitted</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Spaghetti Carbonara</td>
+                <td>September 5, 2024</td>
+                <td>
+                    <a href="edit-recipe.html?id=1">Edit</a>
+                    <a href="delete-recipe.html?id=1">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Chocolate Chip Cookies</td>
+                <td>September 3, 2024</td>
+                <td>
+                    <a href="edit-recipe.html?id=2">Edit</a>
+                    <a href="delete-recipe.html?id=2">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+
+<footer>
+    <p>&copy; 2024 Culinary Home. All rights reserved.</p>
+    <div class="footer-column">
+        <h3>Authors:</h3>
+        <ul>
+            <li>Nassyrkhan Shadiyar</li>
+            <li>Zholtaev Temirlan</li>
+            <li>Iskakov Amir</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

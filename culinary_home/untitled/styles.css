@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 18px;
+    background-color: #fdf0e3;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #fff8e1;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Merriweather', cursive;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffaf46;
+    text-decoration: underline;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f9a45d;
+}
+
+.log-in {
+    background-color: #f9d59d;
+    color: #333;
+}
+
+.sign-up {
+    background-color: #ffaf46;
+    color: white;
+}
+
+.recipe-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 200px;
+    height: auto;
+}
+
+.recipe-info {
+    padding: 20px;
+}
+
+.recipe-info h3 {
+    font-size: 24px;
+    color: #ffaf46;
+    margin-bottom: 10px;
+}
+
+.recipe-info p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.recipe-info a {
+    color: #ffaf46;
+    font-weight: bold;
+}
+
+.recipe-info a:hover {
+    color: #ff7f00;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #ffaf46;
+}
+
+button.submit-btn {
+    background-color: #ffaf46;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+    background-color: #f98b1d;
+}
+
+footer {
+    background-color: #fff8e1;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+}
+
+.header-background {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-bg {
+    background-color: #fff8e1;
+}
+
+#content-wrapper {
+    background-color: #fdf0e3;
+    padding: 20px;
+}
+
+.btn-hover-effect::before {
+    content: '>';
+    padding-right: 5px;
+    color: #ffaf46;
+}
+
+.btn-hover-effect:hover::before {
+    content: '>>';
+    padding-right: 5px;
+}
+
+.card-shadow {
+    transition: box-shadow 0.3s ease;
+}
+
+.card-shadow:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+:focus {
+    outline: 3px solid #ffaf46;
+    outline-offset: 2px;
+}

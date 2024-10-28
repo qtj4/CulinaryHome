@@ -1,0 +1,16 @@
+{
+  "users": {
+    "johnDoe": {
+      "username": "johnDoe",
+      "email": "john@example.com",
+      "password": "password123",
+      "phoneNumber": "123-456-7890"
+    },
+    "janeDoe": {
+      "username": "janeDoe",
+      "email": "jane@example.com",
+      "password": "password456",
+      "phoneNumber": "987-654-3210"
+    }
+  }
+}
