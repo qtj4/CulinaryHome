@@ -1,3 +1,4 @@
+/*
 // Function to display a greeting based on the time of day
 function displayGreeting() {
     const currentHour = new Date().getHours();
@@ -23,7 +24,7 @@ function displayGreeting() {
 
 // Call the function to display the greeting when the page loads
 displayGreeting();
-
+*/
 // Add event listeners for each rating section independently
 const ratingSections = document.querySelectorAll('.rating-section');
 
@@ -51,6 +52,7 @@ ratingSections.forEach(section => {
     });
 });
 
+// Check login status and update button visibility
 document.addEventListener("DOMContentLoaded", function () {
     const loginBtn = document.getElementById("login-btn");
     const signupBtn = document.getElementById("signup-btn");
@@ -75,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Display the current date and time dynamically
 function updateDateTime() {
     const currentDateTime = new Date();
-    document.getElementById('currentDateTime').textContent = currentDateTime.toLocaleString();
+    document.getElementById('currentDateTime').textContent = currentDateTime.toLocaleTimeString();
 }
 
 // Call updateDateTime when the page loads and then every second
