@@ -621,7 +621,6 @@ footer.dark-mode {
     color: #ff7f00 !important;
 }
 
-/* Dark Mode Button Styling */
 button#darkModeToggle {
     background-color: #34495e;
     color: #bdc3c7;
@@ -647,10 +646,8 @@ main {
     margin-left: 40px;
     margin-right: 40px;
 }
-
-/* Optional: Add padding and max-width for better readability */
 main {
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto; /* Center the content horizontally */
+    margin: 0 auto;
 }

@@ -18,7 +18,6 @@ function toggleDarkModeElements(enable) {
         document.querySelector('footer'),
         document.querySelector("#content-wrapper"),
         document.getElementById("subscribeBtn")
-
     ];
 
     // Include nav links
@@ -37,19 +36,20 @@ function toggleDarkModeElements(enable) {
     localStorage.setItem("darkMode", enable.toString());
 }
 
-// Enable and disable dark mode
+// Enable dark mode
 function enableDarkMode() {
     toggleDarkModeElements(true);
-
 }
 
+// Disable dark mode
 function disableDarkMode() {
     toggleDarkModeElements(false);
 }
 
 // Toggle dark mode on button click
 darkModeToggle.onclick = function() {
-    if (document.body.classList.contains('dark-mode')) {
+    const isCurrentlyDarkMode = document.body.classList.contains('dark-mode');
+    if (isCurrentlyDarkMode) {
         disableDarkMode();
     } else {
         enableDarkMode();
